@@ -1,0 +1,4 @@
+.hidden {
+    /* 화면에 표시 안하기 */
+    display: none;
+}

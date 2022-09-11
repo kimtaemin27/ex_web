@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="/no_chrome/css/style.css">
+</head>
+<body>
+    <form id="login-form" class="hidden">
+        <!-- 총 글자길이 제한 -->
+        <!-- form 태그 안의 input 태그들만 작동 div 안됨 -->
+        <input required maxlength="15" type="text" placeholder="What is your name?">
+        <input type="submit" value="Log In">
+        <!-- form 안에서 엔터를 누르고 input 이 더이상 존재하지 않는다면 자동으로 submit 된다 -->
+        <!-- <button>Log In</button> -->
+        <!-- form 안의 버튼을 눌렀을 때도 자동으로 submit 된다 -->
+    </form>
+
+    <h2 id="clock"></h2>
+    <h1 id="greeting" class="hidden"></h1>
+    
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    
+
+    <script src="/no_chrome/js/greeting.js"></script>
+    <script src="/no_chrome/js/clock.js"></script>
+    <script src="/no_chrome/js/quotes.js"></script>
+</body>
+</html>
